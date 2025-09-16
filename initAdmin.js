@@ -14,7 +14,7 @@ bcrypt.hash(password, 10, (err, hash) => {
   }
 
   db.run(
-    'INSERT INTO users (email, password, role) VALUES (?, ?, ?)',
+    'INSERT INTO users (username, password, role) VALUES (?, ?, ?)',
     [email, hash, role],
     (err) => {
       if (err) {
