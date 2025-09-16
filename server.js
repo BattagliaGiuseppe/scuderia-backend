@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
-const DB_PATH = process.env.DB_PATH || "./db/scuderia.db";
+const DB_PATH = process.env.DB_PATH || "./db/database.sqlite";
 const JWT_SECRET = process.env.JWT_SECRET || "secret";
 
 const db = new sqlite3.Database(DB_PATH);
@@ -160,3 +160,4 @@ app.post("/api/expiring_parts", (req,res) => {
 });
 
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
+
