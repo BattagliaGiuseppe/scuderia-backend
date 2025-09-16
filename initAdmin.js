@@ -15,7 +15,7 @@ bcrypt.hash(password, 10, (err, hash) => {
 
   db.run(
     'INSERT INTO users (username, password, role) VALUES (?, ?, ?)',
-    [email, hash, role],
+    [username, hash, role],
     (err) => {
       if (err) {
         console.error('Errore durante la creazione dell\'utente admin:', err.message);
