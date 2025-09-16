@@ -1,7 +1,7 @@
 import sqlite3 from 'sqlite3';
 import bcrypt from 'bcrypt';
 
-const db = new sqlite3.Database('"./db/scuderia.db');
+const db = new sqlite3.Database('./db/database.sqlite');
 
 const username = 'info@battagliaracingcar.com';
 const password = 'Prova1234!';
