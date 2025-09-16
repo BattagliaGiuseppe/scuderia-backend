@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt';
 
 const db = new sqlite3.Database('./db/database.sqlite');
 
-const email = 'info@battagliaracingcar.com';
+const username = 'info@battagliaracingcar.com';
 const password = 'Prova1234!';
 const role = 'admin';
 
