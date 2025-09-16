@@ -1,6 +1,7 @@
 {
   "name": "scuderia-backend",
   "version": "1.0.0",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -15,5 +16,6 @@
     "bcrypt": "^5.1.0"
   }
 }
+
 
 
