@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
     "create-admin": "node initAdmin.js"
   },
   "dependencies": {
@@ -15,4 +15,5 @@
     "bcrypt": "^5.1.0"
   }
 }
+
 
